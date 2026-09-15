@@ -5,6 +5,9 @@ Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
 
+# Scripts locais
+subir-projeto.bat
+
 # Editores / IDEs
 .vscode/
 .idea/
