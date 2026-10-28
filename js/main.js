@@ -34,6 +34,118 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 2.1. Randomizador da Thumbnail em Destaque no Mockup do Hero
+  const heroShowcaseList = [
+    {
+      src: 'assets/images/thumb_user_11.jpg',
+      alt: 'Destaque Thumbnail Gamer - Hollow Knight Silksong',
+      title: 'silksong_jornada.jpg',
+      pill1Icon: '🪡',
+      pill1Text: 'Metroidvania / Silksong',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_10.jpg',
+      alt: 'Destaque Thumbnail Gamer - Bloodborne',
+      title: 'bloodborne_um_jogo_unico.jpg',
+      pill1Icon: '🩸',
+      pill1Text: 'Souls / Bloodborne',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_9.jpg',
+      alt: 'Destaque Thumbnail Gamer - Metal Gear Rising',
+      title: 'metal_gear_aura_ego.jpg',
+      pill1Icon: '⚡',
+      pill1Text: 'Ação / Metal Gear',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_6.jpg',
+      alt: 'Destaque Thumbnail Gamer - The Witcher 3',
+      title: 'the_witcher_o_melhor.jpg',
+      pill1Icon: '🗡️',
+      pill1Text: 'RPG / The Witcher 3',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_2.jpg',
+      alt: 'Destaque Thumbnail Gamer - Elden Ring',
+      title: 'elden_ring_segredo.jpg',
+      pill1Icon: '🔥',
+      pill1Text: 'Souls / Elden Ring',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_7.jpg',
+      alt: 'Destaque Thumbnail Gamer - Lies of P',
+      title: 'lies_of_p_futuro.jpg',
+      pill1Icon: '⚔️',
+      pill1Text: 'Souls / Lies of P',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_4.jpg',
+      alt: 'Destaque Thumbnail Gamer - Dark Souls',
+      title: 'dark_souls_desastre.jpg',
+      pill1Icon: '💀',
+      pill1Text: 'Souls / Dark Souls',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_3.jpg',
+      alt: 'Destaque Thumbnail Gamer - Metroidvania',
+      title: 'metroidvania_era_de_ouro.jpg',
+      pill1Icon: '🎮',
+      pill1Text: 'Metroidvania & Ação',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    },
+    {
+      src: 'assets/images/thumb_user_1.jpg',
+      alt: 'Destaque Thumbnail Gamer - Dark Souls O Primeiro',
+      title: 'dark_souls_o_primeiro.jpg',
+      pill1Icon: '🛡️',
+      pill1Text: 'Souls / Dark Souls',
+      pill2Icon: '✨',
+      pill2Text: '1080p Ultra HD'
+    }
+  ];
+
+  function randomizeHeroMockup() {
+    const heroPreviewImg = document.getElementById('heroPreviewImg');
+    const heroPreviewTitle = document.querySelector('.preview-title');
+    const heroPillCtr = document.querySelector('.pill-ctr');
+    const heroPillQuality = document.querySelector('.pill-quality');
+
+    if (!heroPreviewImg || heroShowcaseList.length === 0) return;
+
+    const randomIndex = Math.floor(Math.random() * heroShowcaseList.length);
+    const chosen = heroShowcaseList[randomIndex];
+
+    heroPreviewImg.src = chosen.src;
+    heroPreviewImg.alt = chosen.alt;
+
+    if (heroPreviewTitle) {
+      heroPreviewTitle.textContent = chosen.title;
+    }
+    if (heroPillCtr) {
+      heroPillCtr.innerHTML = `<span class="pill-icon">${chosen.pill1Icon}</span> <span>${chosen.pill1Text}</span>`;
+    }
+    if (heroPillQuality) {
+      heroPillQuality.innerHTML = `<span class="pill-icon">${chosen.pill2Icon}</span> <span>${chosen.pill2Text}</span>`;
+    }
+  }
+
+  randomizeHeroMockup();
+
   // 3. Carrossel & Filtros da Galeria
   const carouselWrapper = document.getElementById('portfolioCarouselWrapper');
   const carouselViewport = document.getElementById('carouselViewport');
