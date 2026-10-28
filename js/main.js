@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_11.jpg',
       alt: 'Destaque Thumbnail Gamer - Hollow Knight Silksong',
       title: 'silksong_jornada.jpg',
-      pill1Icon: '🪡',
+      pill1Icon: '',
       pill1Text: 'Metroidvania / Silksong',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_10.jpg',
       alt: 'Destaque Thumbnail Gamer - Bloodborne',
       title: 'bloodborne_um_jogo_unico.jpg',
-      pill1Icon: '🩸',
+      pill1Icon: '',
       pill1Text: 'Souls / Bloodborne',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_9.jpg',
       alt: 'Destaque Thumbnail Gamer - Metal Gear Rising',
       title: 'metal_gear_aura_ego.jpg',
-      pill1Icon: '⚡',
+      pill1Icon: '',
       pill1Text: 'Ação / Metal Gear',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_6.jpg',
       alt: 'Destaque Thumbnail Gamer - The Witcher 3',
       title: 'the_witcher_o_melhor.jpg',
-      pill1Icon: '🗡️',
+      pill1Icon: '',
       pill1Text: 'RPG / The Witcher 3',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_2.jpg',
       alt: 'Destaque Thumbnail Gamer - Elden Ring',
       title: 'elden_ring_segredo.jpg',
-      pill1Icon: '🔥',
+      pill1Icon: '',
       pill1Text: 'Souls / Elden Ring',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_7.jpg',
       alt: 'Destaque Thumbnail Gamer - Lies of P',
       title: 'lies_of_p_futuro.jpg',
-      pill1Icon: '⚔️',
+      pill1Icon: '',
       pill1Text: 'Souls / Lies of P',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_4.jpg',
       alt: 'Destaque Thumbnail Gamer - Dark Souls',
       title: 'dark_souls_desastre.jpg',
-      pill1Icon: '💀',
+      pill1Icon: '',
       pill1Text: 'Souls / Dark Souls',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_3.jpg',
       alt: 'Destaque Thumbnail Gamer - Metroidvania',
       title: 'metroidvania_era_de_ouro.jpg',
-      pill1Icon: '🎮',
+      pill1Icon: '',
       pill1Text: 'Metroidvania & Ação',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       src: 'assets/images/thumb_user_1.jpg',
       alt: 'Destaque Thumbnail Gamer - Dark Souls O Primeiro',
       title: 'dark_souls_o_primeiro.jpg',
-      pill1Icon: '🛡️',
+      pill1Icon: '',
       pill1Text: 'Souls / Dark Souls',
       pill2Icon: '✨',
       pill2Text: '1080p Ultra HD'
